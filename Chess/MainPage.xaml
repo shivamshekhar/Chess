@@ -9,7 +9,7 @@
 
     <Grid x:Name="Maingrid">
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/background.jpg"/>
+            <ImageBrush ImageSource="ms-appx:/Assets/background.jpg" Stretch="Fill"/>
         </Grid.Background>
         <Grid
             x:Name="chessboard"
@@ -45,6 +45,6 @@
 
         </Grid>
         <TextBlock x:Name="coordinatebox" HorizontalAlignment="Left" Height="Auto" Margin="0,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="Auto" FontSize="26.667"/>
-
+        <Image HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,40,0,0" Source="Assets/backbutton.png" Height="30" Width="30" Tapped="Image_Tapped"/>
     </Grid>
 </Page>

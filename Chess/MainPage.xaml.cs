@@ -1048,16 +1048,17 @@ namespace Chess
         private void gameover(string _playerturn) //triggers when game is over.
         {
             TextBlock winmsg = new TextBlock();
-            winmsg.Height = 100;
-            winmsg.Width = 500;
             winmsg.Opacity = 0;
             winmsg.HorizontalAlignment = HorizontalAlignment.Center;
             winmsg.VerticalAlignment = VerticalAlignment.Center;
             winmsg.FontSize = 66.667;
             winmsg.FontWeight = FontWeights.Bold;
-            winmsg.Text = _playerturn.ToUpper() + " Wins!";
+            winmsg.MaxLines = 2;
+            winmsg.Text = "Checkmate!\n" + _playerturn.ToUpper() + " Wins!";
             winmsg.Foreground = new SolidColorBrush(Colors.Black);
             winmsg.TextAlignment = TextAlignment.Center;
+            winmsg.Margin = new Thickness(0, -100, 0, 0);
+            
 
             Button tryagain = new Button();
             tryagain.Height = 70;
@@ -1103,5 +1104,9 @@ namespace Chess
             Frame.Navigate(typeof(MainPage));
         }
 
+        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainMenu));
+        }
     }
 }

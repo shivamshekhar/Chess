@@ -1,8 +1,10 @@
+Assets\backbutton.png
 Assets\background.jpg
 Assets\bishop_black.png
 Assets\bishop_white.png
 Assets\chessboard.png
 Assets\chessboard3.png
+Assets\font.png
 Assets\king_black.png
 Assets\king_white.png
 Assets\knight_black.png
@@ -20,6 +22,7 @@ Assets\Square310x310Logo.scale-100.png
 Assets\Square70x70Logo.scale-100.png
 Assets\StoreLogo.scale-100.png
 Assets\Wide310x150Logo.scale-100.png
+About.xbf
 App.xbf
 Chess.xr.xml
 MainMenu.xbf

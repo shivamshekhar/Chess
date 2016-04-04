@@ -7,16 +7,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="Assets/chessboard3.png"/>
-        </Grid.Background>
-        <Image Height="400" Width="400" HorizontalAlignment="Left" VerticalAlignment="Top" Source="Assets/queen_black.png"/>
-        <Image Height="400" Width="400" HorizontalAlignment="Right" VerticalAlignment="Top" Source="Assets/king_white.png"/>
+    <Grid Background="White">
+        <Image Height="400" Width="400" HorizontalAlignment="Left" VerticalAlignment="Top" Source="Assets/king_black.png"/>
+        <Image Height="400" Width="400" HorizontalAlignment="Right" VerticalAlignment="Top" Source="Assets/queen_white.png"/>
         <Image Height="400" Width="400" HorizontalAlignment="Left" VerticalAlignment="Bottom" Source="Assets/knight_white.png"/>
         <Image Height="400" Width="400" HorizontalAlignment="Right" VerticalAlignment="Bottom" Source="Assets/rook_black.png"/>
-        <TextBlock Text="CHESS" HorizontalAlignment="Center" Margin="0,-250,0,0" Height="200" Width="800" FontSize="186.667" TextAlignment="Center" FontFamily="Old English Text MT" Foreground="Black" FontWeight="Bold"/>
-        <Button Content="Play" Height="120" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,250,0,0" Background="Black" FontSize="53.333" FontWeight="Bold" FontFamily="Segoe Script" Tapped="Button_Tapped" />
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20,0,0" Text="Version 1.0 Made by: Shivam Shekhar" Foreground="Black" FontSize="20" TextAlignment="Center" FontWeight="Bold"/>
+        <TextBlock Text="Classic" HorizontalAlignment="Center" Margin="-580,-520,0,0" Height="50" Width="150" FontSize="40" TextAlignment="Center" FontFamily="Old English Text MT" Foreground="Black" FontWeight="Bold"/>
+        <Image Height="400" Width="1200" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-350,0,0" Source="Assets/font.png"/>
+        <!--Button Content="Play" Height="120" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,250,0,0" Background="Black" FontSize="53.333" FontWeight="Bold" FontFamily="Century" Tapped="Button_Tapped" /-->
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-605,-50,0,0" Text="Version 1.0" Foreground="Black" FontSize="12" TextAlignment="Center" FontWeight="Bold" MaxLines="2"/>
+        <Image Height="130" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,330,0,0" Source="Assets/rook_white.png" PointerEntered="Image_PointerEntered" PointerExited="Image_PointerExited" Tapped="MainPage_Tapped"/>
+        <Image Height="130" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-395,330,0,0" Source="Assets/bishop_black.png" PointerEntered="Image_PointerEntered" PointerExited="Image_PointerExited" Tapped="HowToPlay_Tapped"/>
+        <Image Height="130" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="395,330,0,0" Source="Assets/queen_black.png" PointerEntered="Image_PointerEntered" PointerExited="Image_PointerExited" Tapped="About_Tapped"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,560,0,0" Text="Play" Foreground="Black" FontSize="32" TextAlignment="Center" FontFamily="Algerian"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-395,560,0,0" Text="Rules" Foreground="Black" FontSize="32" TextAlignment="Center" FontFamily="Algerian"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="395,560,0,0" Text="About" Foreground="Black" FontSize="32" TextAlignment="Center" FontFamily="Algerian"/>
+
     </Grid>
 </Page>

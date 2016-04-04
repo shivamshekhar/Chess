@@ -31,5 +31,34 @@ namespace Chess
         {
             Frame.Navigate(typeof(MainPage));
         }
+
+        private void Image_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Image img = sender as Image;
+            img.Height = 200;
+            img.Width = 200;
+        }
+
+        private void Image_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Image img = sender as Image;
+            img.Height = 130;
+            img.Width = 130;
+        }
+
+        private void MainPage_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+
+        private void HowToPlay_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void About_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(About));
+        }
     }
 }

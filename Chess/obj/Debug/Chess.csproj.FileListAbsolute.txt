@@ -35,3 +35,8 @@ G:\My projects\Chess C#\Chess\Chess\obj\Debug\MainMenu.g.i.cs
 G:\My projects\Chess C#\Chess\Chess\obj\Debug\MainMenu.g.cs
 G:\My projects\Chess C#\Chess\Chess\obj\Debug\MainMenu.xaml
 G:\My projects\Chess C#\Chess\Chess\obj\Debug\MainMenu.xbf
+G:\My projects\Chess C#\Chess\Chess\bin\Debug\About.xbf
+G:\My projects\Chess C#\Chess\Chess\obj\Debug\About.g.i.cs
+G:\My projects\Chess C#\Chess\Chess\obj\Debug\About.g.cs
+G:\My projects\Chess C#\Chess\Chess\obj\Debug\About.xaml
+G:\My projects\Chess C#\Chess\Chess\obj\Debug\About.xbf
