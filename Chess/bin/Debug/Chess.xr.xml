@@ -51,11 +51,11 @@
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Chess.About" />
-    <RootType FullName="Chess.MainMenu" />
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
-      <RootProperty Name="ImageSource" />
       <RootProperty Name="Stretch" />
+      <RootProperty Name="ImageSource" />
     </RootType>
+    <RootType FullName="Chess.MainMenu" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>

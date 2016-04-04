@@ -129,11 +129,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\backbutton.png" />
-    <Content Include="Assets\background.jpg" />
+    <Content Include="Assets\background1.jpg" />
     <Content Include="Assets\bishop_black.png" />
     <Content Include="Assets\bishop_white.png" />
     <Content Include="Assets\chessboard.png" />
+    <Content Include="Assets\chessboard10.png" />
+    <Content Include="Assets\chessboard11.png" />
     <Content Include="Assets\chessboard3.png" />
+    <Content Include="Assets\chessboard4.png" />
+    <Content Include="Assets\chessboard5.png" />
+    <Content Include="Assets\chessboard6.png" />
+    <Content Include="Assets\chessboard7.png" />
+    <Content Include="Assets\chessboard8.png" />
+    <Content Include="Assets\chessboard9.png" />
     <Content Include="Assets\font.png" />
     <Content Include="Assets\king_black.png" />
     <Content Include="Assets\king_white.png" />

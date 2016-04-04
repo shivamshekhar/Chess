@@ -33,8 +33,32 @@
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard.png">
       <PackagePath>Assets\chessboard.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard10.png">
+      <PackagePath>Assets\chessboard10.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard11.png">
+      <PackagePath>Assets\chessboard11.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard3.png">
       <PackagePath>Assets\chessboard3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard4.png">
+      <PackagePath>Assets\chessboard4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard5.png">
+      <PackagePath>Assets\chessboard5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard6.png">
+      <PackagePath>Assets\chessboard6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard7.png">
+      <PackagePath>Assets\chessboard7.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard8.png">
+      <PackagePath>Assets\chessboard8.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard9.png">
+      <PackagePath>Assets\chessboard9.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\font.png">
       <PackagePath>Assets\font.png</PackagePath>
@@ -97,8 +121,8 @@
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\background.jpg">
-      <PackagePath>Assets\background.jpg</PackagePath>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\background1.jpg">
+      <PackagePath>Assets\background1.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\bin\Debug\Chess.xr.xml">
       <PackagePath>Chess.xr.xml</PackagePath>

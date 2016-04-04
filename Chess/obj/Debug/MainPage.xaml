@@ -9,7 +9,7 @@
 
     <Grid x:Name="Maingrid">
         <Grid.Background>
-            <ImageBrush ImageSource="ms-appx:/Assets/background.jpg" Stretch="Fill"/>
+            <ImageBrush ImageSource="Assets/background1.jpg" Stretch="Fill"/>
         </Grid.Background>
         <Grid
             x:Name="chessboard"
@@ -18,7 +18,7 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
             <Grid.Background>
-                <ImageBrush Stretch="Fill" ImageSource="Assets/chessboard3.png"/>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/chessboard4.png"/>
             </Grid.Background>
 
             <Grid.RowDefinitions>
