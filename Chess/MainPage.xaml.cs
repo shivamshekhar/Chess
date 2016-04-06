@@ -246,7 +246,7 @@ namespace Chess
                         {
                             if(i>-1 && i<8 && j<8 && j>-1)
                             {
-                                if(chessboardmap[i,j]<=0)
+                                if(chessboardmap[i,j]<=0)// && iskingchecked(i,j) == false) /*changed*/
                                 {
                                     highlighttile(i, j);
                                 }
@@ -637,7 +637,7 @@ namespace Chess
                         {
                             if (i > -1 && i < 8 && j < 8 && j > -1)
                             {
-                                if (chessboardmap[i, j] >= 0)
+                                if (chessboardmap[i, j] >= 0)// && iskingchecked(i, j) == false) /*changed*/
                                 {
                                     highlighttile(i, j);
                                 }
@@ -1099,6 +1099,227 @@ namespace Chess
             stb.Begin();
         }
 
+        private bool iskingchecked(int kingx, int kingy)
+        {
+            int king;
+            if (playerturn == "white")
+                king = 1;
+            else
+                king = -1;
+            
+            if(king > 0)
+            {
+                
+                for(int i = kingx + 1; i < 8; i++) //vertical down
+                {
+                    if (chessboardmap[i, kingy] == -4 || chessboardmap[i, kingy] == -2)
+                        return true;
+                    /*else if (chessboardmap[i, kingy] == -1 && i == kingx + 1)
+                        return true;*/
+                    else if (chessboardmap[i, kingy] > 0)
+                        break;
+                }
+
+                for (int i = kingx - 1; i > -1; i--) //vertical up
+                {
+                    if (chessboardmap[i, kingy] == -4 || chessboardmap[i, kingy] == -2)
+                        return true;
+                    /*else if (chessboardmap[i, kingy] == -1 && i == kingx - 1)
+                        return true;*/
+                    else if (chessboardmap[i, kingy] > 0)
+                        break;
+                }
+
+                for(int i = kingy + 1; i < 8; i++) //horizontal right
+                {
+                    if (chessboardmap[kingx, i] == -4 || chessboardmap[kingx, i] == -2)
+                        return true;
+                    /*else if (chessboardmap[kingx, i] == -1 && i == kingy + 1)
+                        return true;*/
+                    else if (chessboardmap[i, kingy] > 0)
+                        break;
+                }
+
+                for (int i = kingy - 1; i > -1; i--) //horizontal left
+                {
+                    if (chessboardmap[kingx, i] == -4 || chessboardmap[kingx, i] == -2)
+                        return true;
+                    /*else if (chessboardmap[kingx, i] == -1 && i == kingy - 1)
+                        return true;*/
+                    else if (chessboardmap[i, kingy] > 0)
+                        break;
+                }
+
+                for(int i = 0; i < 8; i++) //diagonal bottom right
+                {
+                    if (kingx + i < 8 && kingy + i < 8)
+                    {
+                        if (chessboardmap[kingx + i, kingy + i] == -2 || chessboardmap[kingx + i, kingy + i] == -5)
+                            return true;
+                        else if (chessboardmap[kingx + i, kingy + i] == -6 && i == 1)
+                            return true;
+                        else if (chessboardmap[kingx + i, kingy + i] > 0)
+                            break;
+                    }
+                    else
+                        break;
+                }
+
+                for (int i = 0; i < 8; i++) //diagonal bottom left
+                {
+                    if (kingx + i < 8 && kingy - i > -1)
+                    {
+                        if (chessboardmap[kingx + i, kingy - i] == -2 || chessboardmap[kingx + i, kingy - i] == -5)
+                            return true;
+                        else if (chessboardmap[kingx + i, kingy - i] == -6 && i == 1)
+                            return true;
+                        else if (chessboardmap[kingx + i, kingy - i] > 0)
+                            break;
+                    }
+                    else
+                        break;
+                }
+
+                for (int i = 0; i < 8; i++) //diagonal top right
+                {
+                    if (kingx - i > -1 && kingy + i < 8)
+                    {
+                        if (chessboardmap[kingx - i, kingy + i] == -2 || chessboardmap[kingx - i, kingy + i] == -5)
+                            return true;
+                        else if (chessboardmap[kingx - i, kingy + i] > 0)
+                            break;
+                    }
+                    else
+                        break;
+                }
+
+                for (int i = 0; i < 8; i++) //diagonal top left
+                {
+                    if (kingx - i > -1 && kingy - i > -1)
+                    {
+                        if (chessboardmap[kingx - i, kingy - i] == -2 || chessboardmap[kingx - i, kingy - i] == -5)
+                            return true;
+                        else if (chessboardmap[kingx - i, kingy - i] > 0)
+                            break;
+                    }
+                    else
+                        break;
+                }
+
+            }
+
+            else if (king < 0)
+            {
+                /*//check for pawn
+                if (kingx + 1 < 8 && (kingy + 1 < 8 || kingy - 1 > -1))
+                {
+                    if (chessboardmap[kingx + 1, kingy + 1] == -6 || chessboardmap[kingx + 1, kingy - 1] == -6)
+                        return true;
+                }
+
+                //check for*/
+                for (int i = kingx + 1; i < 8; i++) //vertical down
+                {
+                    if (chessboardmap[i, kingy] == 4 || chessboardmap[i, kingy] == 2)
+                        return true;
+                    /*else if (chessboardmap[i, kingy] == 1 && i == kingx + 1)
+                        return true;*/
+                    else if (chessboardmap[i, kingy] < 0)
+                        break;
+                }
+
+                for (int i = kingx - 1; i > -1; i--) //vertical up
+                {
+                    if (chessboardmap[i, kingy] == 4 || chessboardmap[i, kingy] == 2)
+                        return true;
+                    /*else if (chessboardmap[i, kingy] == 1 && i == kingx - 1)
+                        return true;*/
+                    else if (chessboardmap[i, kingy] < 0)
+                        break;
+                }
+
+                for (int i = kingy + 1; i < 8; i++) //horizontal right
+                {
+                    if (chessboardmap[kingx, i] == 4 || chessboardmap[kingx, i] == 2)
+                        return true;
+                    /*else if (chessboardmap[kingx, i] == 1 && i == kingy + 1)
+                        return true;*/
+                    else if (chessboardmap[i, kingy] < 0)
+                        break;
+                }
+
+                for (int i = kingy - 1; i > -1; i--) //horizontal left
+                {
+                    if (chessboardmap[kingx, i] == 4 || chessboardmap[kingx, i] == 2)
+                        return true;
+                    /*else if (chessboardmap[kingx, i] == 1 && i == kingy - 1)
+                        return true;*/
+                    else if (chessboardmap[i, kingy] < 0)
+                        break;
+                }
+
+                for (int i = 0; i < 8; i++) //diagonal bottom right
+                {
+                    if (kingx + i < 8 && kingy + i < 8)
+                    {
+                        if (chessboardmap[kingx + i, kingy + i] == 2 || chessboardmap[kingx + i, kingy + i] == 5)
+                            return true;
+                        else if (chessboardmap[kingx + i, kingy + i] < 0)
+                            break;
+
+                    }
+                    else
+                        break;
+                }
+
+                for (int i = 0; i < 8; i++) //diagonal bottom left
+                {
+                    if (kingx + i < 8 && kingy - i > -1)
+                    {
+                        if (chessboardmap[kingx + i, kingy - i] == 2 || chessboardmap[kingx + i, kingy - i] == 5)
+                            return true;
+                        else if (chessboardmap[kingx + i, kingy - i] < 0)
+                            break;
+
+                    }
+                    else
+                        break;
+                }
+
+                for (int i = 0; i < 8; i++) //diagonal top right
+                {
+                    if (kingx - i > -1 && kingy + i < 8)
+                    {
+                        if (chessboardmap[kingx - i, kingy + i] == 2 || chessboardmap[kingx - i, kingy + i] == 5)
+                            return true;
+                        else if (chessboardmap[kingx - i, kingy + i] == 6 && i == 1)
+                            return true;
+                        else if (chessboardmap[kingx - i, kingy + i] < 0)
+                            break;
+                    }
+                    else
+                        break;
+                }
+
+                for (int i = 0; i < 8; i++) //diagonal top left
+                {
+                    if (kingx - i > -1 && kingy - i > -1)
+                    {
+                        if (chessboardmap[kingx - i, kingy - i] == 2 || chessboardmap[kingx - i, kingy - i] == 5)
+                            return true;
+                        else if (chessboardmap[kingx - i, kingy - i] == 6 && i == 1)
+                            return true;
+                        else if (chessboardmap[kingx - i, kingy - i] < 0)
+                            break;
+                    }
+                    else
+                        break;
+                }
+
+            }
+            return false;
+        }
+
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
@@ -1108,5 +1329,6 @@ namespace Chess
         {
             Frame.Navigate(typeof(MainMenu));
         }
+
     }
 }

@@ -549,3 +549,4 @@ namespace Chess.Chess_XamlTypeInfo
 }
 
 
+

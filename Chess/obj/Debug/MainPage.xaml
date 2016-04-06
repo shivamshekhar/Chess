@@ -44,7 +44,7 @@
 
 
         </Grid>
-        <TextBlock x:Name="coordinatebox" HorizontalAlignment="Left" Height="Auto" Margin="0,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="Auto" FontSize="26.667"/>
+        <TextBlock x:Name="coordinatebox" HorizontalAlignment="Left" Height="Auto" Margin="30,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="Auto" FontSize="26.667"/>
         <Image x:ConnectionId='1' HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,40,0,0" Source="Assets/backbutton.png" Height="30" Width="30"                      />
     </Grid>
 </Page>
