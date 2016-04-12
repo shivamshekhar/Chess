@@ -14,15 +14,15 @@ Windows 8.1/10
 
 ### Instructions:  
 #####For developers: 
-*Compile the solution file Chess.sln in Visual Studio Community 2015 having Windows 8.1 SDK installed. 
-*You need to switch on the developer mode.
+*Compile the solution file Chess.sln in Visual Studio Community 2015 having Windows 8.1 SDK installed. 1
+*You need to switch on the developer mode. 2
 
 ### For end users: 
-*Open Chess\App Packages\Chess_1.0.0.0_AnyCPU_Test\ 
-*Right click on Add-AppDevPackage.ps1 and click on 
-*Run with Powershell 
-*Follow the steps to complete the installation.  
-*Also, please make sure you have switched on your developer mode. 
+*Open Chess\App Packages\Chess_1.0.0.0_AnyCPU_Test\ 1
+*Right click on Add-AppDevPackage.ps1 and click on 2
+*Run with Powershell 3
+*Follow the steps to complete the installation. 4  
+*Also, please make sure you have switched on your developer mode. 5 
 
 
 ### Developed by: 
