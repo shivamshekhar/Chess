@@ -30,6 +30,7 @@ namespace Chess
     {
 
         int[,] chessboardmap = new int[8, 8]; //an integer array of chesspieces
+        //int[,] hypotheticalchessboardmap = new int[8, 8];
         bool ispathhighlighted = false; //shows whether the valid path of a chess piece is highlighted or not
         int[] selectpiececoord = new int[2]; //coordinates of selected piece
         string playerturn = "white"; 
@@ -214,6 +215,26 @@ namespace Chess
                     {
                         playerturn = "white";
                     }
+                    int kingx = 0, kingy = 0;
+                    for(int i = 0; i<8;i++)
+                    {
+                        for(int j = 0; j< 8; j++)
+                        {
+                            if((playerturn == "white" && chessboardmap[i,j] == 1) || (playerturn == "black" && chessboardmap[i, j] == -1))
+                            {
+                                kingx = i;
+                                kingy = j;
+                            }
+                        }
+                    }
+                    if(iskingchecked(kingx, kingy) == true)
+                    {
+                        warningmsg.Text = playerturn + " king checked!";
+                    }
+                    else
+                    {
+                        warningmsg.Text = "";
+                    }
                     ispathhighlighted = false;
                 }
                 else
@@ -235,6 +256,66 @@ namespace Chess
             }
         }
 
+        private bool hypotheticalmove(int initx, int inity, int destx, int desty)
+        {
+            int kingx = 0, kingy = 0, br = 1;
+            int[,] hypotheticalchessboardmap = new int[8, 8];
+            for(int i = 0; i < 8; i++)
+            {
+                for(int j = 0; j < 8; j++)
+                {
+                    hypotheticalchessboardmap[i, j] = chessboardmap[i, j];
+                }
+            }
+            //hypotheticalchessboardmap = chessboardmap;
+            chessboardmap[destx, desty] = chessboardmap[initx, inity];
+            chessboardmap[initx, inity] = 0;
+            for(int i = 0; i < 8; i++)
+            {
+                for(int j = 0; j < 8; j++ )
+                {
+                    if((playerturn == "white" && chessboardmap[i,j] == 1) || (playerturn == "black" && chessboardmap[i, j] == -1))
+                    {
+                        kingx = i;
+                        kingy = j;
+                        br = 0;
+                        break;
+                    }
+                }
+                if (br == 0)
+                    break;
+            }
+
+            if (iskingchecked(kingx, kingy) == true)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    for (int j = 0; j < 8; j++)
+                    {
+                        chessboardmap[i, j] = hypotheticalchessboardmap[i, j];
+                    }
+                }
+                return true;
+            }
+            else
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    for (int j = 0; j < 8; j++)
+                    {
+                        chessboardmap[i, j] = hypotheticalchessboardmap[i, j];
+                    }
+                }
+                return false;
+            }
+        }
+
+        /*private bool issafesquare(int x, int y)
+        {
+               
+            return false;
+        }*/
+
         private void showvalidsquares(int selectx, int selecty) //shows valid moves of a selected chess piece
         {
             switch(chessboardmap[selectx,selecty])
@@ -248,7 +329,22 @@ namespace Chess
                             {
                                 if(chessboardmap[i,j]<=0)// && iskingchecked(i,j) == false) /*changed*/
                                 {
-                                    highlighttile(i, j);
+                                    if (hypotheticalmove(selectx, selecty, i, j) == false)
+                                    {
+                                      //  chessboardmap = hypotheticalchessboardmap;
+                                        highlighttile(i, j);
+                                    }
+                                    /*string str = "";
+                                    for(int I = 0; I<8;I++)
+                                    {
+                                        for(int J = 0; J < 8; J++)
+                                        {
+                                            str = chessboardmap[i, j].ToString() + str;
+                                        }
+
+                                        str = str + "\n";
+                                    }
+                                    t1.Text = str;*/
                                 }
                             }
                         }
@@ -639,7 +735,12 @@ namespace Chess
                             {
                                 if (chessboardmap[i, j] >= 0)// && iskingchecked(i, j) == false) /*changed*/
                                 {
-                                    highlighttile(i, j);
+                                    if (hypotheticalmove(selectx, selecty, i, j) == false)
+                                    {
+                                        //  chessboardmap = hypotheticalchessboardmap;
+                                        highlighttile(i, j);
+                                    }
+                                    //highlighttile(i, j);
                                 }
                             }
                         }
@@ -1114,9 +1215,9 @@ namespace Chess
                 {
                     if (chessboardmap[i, kingy] == -4 || chessboardmap[i, kingy] == -2)
                         return true;
-                    /*else if (chessboardmap[i, kingy] == -1 && i == kingx + 1)
-                        return true;*/
-                    else if (chessboardmap[i, kingy] > 0)
+                    else if (chessboardmap[i, kingy] == -1 && i == kingx + 1)
+                        return true;
+                    else if (chessboardmap[i, kingy] != /*>*/ 0)
                         break;
                 }
 
@@ -1124,9 +1225,9 @@ namespace Chess
                 {
                     if (chessboardmap[i, kingy] == -4 || chessboardmap[i, kingy] == -2)
                         return true;
-                    /*else if (chessboardmap[i, kingy] == -1 && i == kingx - 1)
-                        return true;*/
-                    else if (chessboardmap[i, kingy] > 0)
+                    else if (chessboardmap[i, kingy] == -1 && i == kingx - 1)
+                        return true;
+                    else if (chessboardmap[i, kingy] != /*>*/ 0)
                         break;
                 }
 
@@ -1134,9 +1235,9 @@ namespace Chess
                 {
                     if (chessboardmap[kingx, i] == -4 || chessboardmap[kingx, i] == -2)
                         return true;
-                    /*else if (chessboardmap[kingx, i] == -1 && i == kingy + 1)
-                        return true;*/
-                    else if (chessboardmap[i, kingy] > 0)
+                    else if (chessboardmap[kingx, i] == -1 && i == kingy + 1)
+                        return true;
+                    else if (chessboardmap[i, kingy] != /*>*/ 0)
                         break;
                 }
 
@@ -1144,13 +1245,13 @@ namespace Chess
                 {
                     if (chessboardmap[kingx, i] == -4 || chessboardmap[kingx, i] == -2)
                         return true;
-                    /*else if (chessboardmap[kingx, i] == -1 && i == kingy - 1)
-                        return true;*/
-                    else if (chessboardmap[i, kingy] > 0)
+                    else if (chessboardmap[kingx, i] == -1 && i == kingy - 1)
+                        return true;
+                    else if (chessboardmap[i, kingy] != /*>*/ 0)
                         break;
                 }
 
-                for(int i = 0; i < 8; i++) //diagonal bottom right
+                for(int i = 1; i < 8; i++) //diagonal bottom right
                 {
                     if (kingx + i < 8 && kingy + i < 8)
                     {
@@ -1158,14 +1259,14 @@ namespace Chess
                             return true;
                         else if (chessboardmap[kingx + i, kingy + i] == -6 && i == 1)
                             return true;
-                        else if (chessboardmap[kingx + i, kingy + i] > 0)
+                        else if (chessboardmap[kingx + i, kingy + i] != /*>*/ 0)
                             break;
                     }
                     else
                         break;
                 }
 
-                for (int i = 0; i < 8; i++) //diagonal bottom left
+                for (int i = 1; i < 8; i++) //diagonal bottom left
                 {
                     if (kingx + i < 8 && kingy - i > -1)
                     {
@@ -1173,33 +1274,33 @@ namespace Chess
                             return true;
                         else if (chessboardmap[kingx + i, kingy - i] == -6 && i == 1)
                             return true;
-                        else if (chessboardmap[kingx + i, kingy - i] > 0)
+                        else if (chessboardmap[kingx + i, kingy - i] != /*>*/ 0)
                             break;
                     }
                     else
                         break;
                 }
 
-                for (int i = 0; i < 8; i++) //diagonal top right
+                for (int i = 1; i < 8; i++) //diagonal top right
                 {
                     if (kingx - i > -1 && kingy + i < 8)
                     {
                         if (chessboardmap[kingx - i, kingy + i] == -2 || chessboardmap[kingx - i, kingy + i] == -5)
                             return true;
-                        else if (chessboardmap[kingx - i, kingy + i] > 0)
+                        else if (chessboardmap[kingx - i, kingy + i] != /*>*/ 0)
                             break;
                     }
                     else
                         break;
                 }
 
-                for (int i = 0; i < 8; i++) //diagonal top left
+                for (int i = 1; i < 8; i++) //diagonal top left
                 {
                     if (kingx - i > -1 && kingy - i > -1)
                     {
                         if (chessboardmap[kingx - i, kingy - i] == -2 || chessboardmap[kingx - i, kingy - i] == -5)
                             return true;
-                        else if (chessboardmap[kingx - i, kingy - i] > 0)
+                        else if (chessboardmap[kingx - i, kingy - i] != /*>*/ 0)
                             break;
                     }
                     else
@@ -1222,9 +1323,9 @@ namespace Chess
                 {
                     if (chessboardmap[i, kingy] == 4 || chessboardmap[i, kingy] == 2)
                         return true;
-                    /*else if (chessboardmap[i, kingy] == 1 && i == kingx + 1)
-                        return true;*/
-                    else if (chessboardmap[i, kingy] < 0)
+                    else if (chessboardmap[i, kingy] == 1 && i == kingx + 1)
+                        return true;
+                    else if (chessboardmap[i, kingy] != /*<*/ 0)
                         break;
                 }
 
@@ -1232,9 +1333,9 @@ namespace Chess
                 {
                     if (chessboardmap[i, kingy] == 4 || chessboardmap[i, kingy] == 2)
                         return true;
-                    /*else if (chessboardmap[i, kingy] == 1 && i == kingx - 1)
-                        return true;*/
-                    else if (chessboardmap[i, kingy] < 0)
+                    else if (chessboardmap[i, kingy] == 1 && i == kingx - 1)
+                        return true;
+                    else if (chessboardmap[i, kingy] != /*<*/ 0)
                         break;
                 }
 
@@ -1242,9 +1343,9 @@ namespace Chess
                 {
                     if (chessboardmap[kingx, i] == 4 || chessboardmap[kingx, i] == 2)
                         return true;
-                    /*else if (chessboardmap[kingx, i] == 1 && i == kingy + 1)
-                        return true;*/
-                    else if (chessboardmap[i, kingy] < 0)
+                    else if (chessboardmap[kingx, i] == 1 && i == kingy + 1)
+                        return true;
+                    else if (chessboardmap[i, kingy] != /*<*/ 0)
                         break;
                 }
 
@@ -1252,19 +1353,19 @@ namespace Chess
                 {
                     if (chessboardmap[kingx, i] == 4 || chessboardmap[kingx, i] == 2)
                         return true;
-                    /*else if (chessboardmap[kingx, i] == 1 && i == kingy - 1)
-                        return true;*/
-                    else if (chessboardmap[i, kingy] < 0)
+                    else if (chessboardmap[kingx, i] == 1 && i == kingy - 1)
+                        return true;
+                    else if (chessboardmap[i, kingy] != /*<*/ 0)
                         break;
                 }
 
-                for (int i = 0; i < 8; i++) //diagonal bottom right
+                for (int i = 1; i < 8; i++) //diagonal bottom right
                 {
                     if (kingx + i < 8 && kingy + i < 8)
                     {
                         if (chessboardmap[kingx + i, kingy + i] == 2 || chessboardmap[kingx + i, kingy + i] == 5)
                             return true;
-                        else if (chessboardmap[kingx + i, kingy + i] < 0)
+                        else if (chessboardmap[kingx + i, kingy + i] != /*<*/ 0)
                             break;
 
                     }
@@ -1272,13 +1373,13 @@ namespace Chess
                         break;
                 }
 
-                for (int i = 0; i < 8; i++) //diagonal bottom left
+                for (int i = 1; i < 8; i++) //diagonal bottom left
                 {
                     if (kingx + i < 8 && kingy - i > -1)
                     {
                         if (chessboardmap[kingx + i, kingy - i] == 2 || chessboardmap[kingx + i, kingy - i] == 5)
                             return true;
-                        else if (chessboardmap[kingx + i, kingy - i] < 0)
+                        else if (chessboardmap[kingx + i, kingy - i] != /*<*/ 0)
                             break;
 
                     }
@@ -1286,7 +1387,7 @@ namespace Chess
                         break;
                 }
 
-                for (int i = 0; i < 8; i++) //diagonal top right
+                for (int i = 1; i < 8; i++) //diagonal top right
                 {
                     if (kingx - i > -1 && kingy + i < 8)
                     {
@@ -1294,14 +1395,14 @@ namespace Chess
                             return true;
                         else if (chessboardmap[kingx - i, kingy + i] == 6 && i == 1)
                             return true;
-                        else if (chessboardmap[kingx - i, kingy + i] < 0)
+                        else if (chessboardmap[kingx - i, kingy + i] != /*<*/ 0)
                             break;
                     }
                     else
                         break;
                 }
 
-                for (int i = 0; i < 8; i++) //diagonal top left
+                for (int i = 1; i < 8; i++) //diagonal top left
                 {
                     if (kingx - i > -1 && kingy - i > -1)
                     {
@@ -1309,7 +1410,7 @@ namespace Chess
                             return true;
                         else if (chessboardmap[kingx - i, kingy - i] == 6 && i == 1)
                             return true;
-                        else if (chessboardmap[kingx - i, kingy - i] < 0)
+                        else if (chessboardmap[kingx - i, kingy - i] != /*<*/ 0)
                             break;
                     }
                     else

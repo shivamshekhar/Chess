@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>ead7647f-4bdf-4e4d-9aea-2f3ebc57f88c</PackageIdentityName>
-    <IntermediateOutputPath>G:\My projects\Chess C#\Chess\Chess\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>8349ADB29CC5E0BEFDE7C28396C528385E67E877DBA69FEF638DC6E31BF6EAAA</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>ead7647f-4bdf-4e4d-9aea-2f3ebc57f88c_1.0.0.0_neutral__x624pxdttrxca</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>ead7647f-4bdf-4e4d-9aea-2f3ebc57f88c_x624pxdttrxca!App</RegisteredUserModeAppID>
@@ -19,175 +19,175 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="G:\My projects\Chess C#\Chess\Chess\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-04T18:52:19.907</Modified>
+      <Modified>2016-04-12T14:55:04.220</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\bin\Debug\Chess.exe">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.exe">
       <PackagePath>Chess.exe</PackagePath>
-      <Modified>2016-04-05T18:17:11.078</Modified>
+      <Modified>2016-05-11T23:48:29.586</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\backbutton.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\backbutton.png">
       <PackagePath>Assets\backbutton.png</PackagePath>
-      <Modified>2016-04-04T15:58:25.143</Modified>
+      <Modified>2016-04-12T14:39:37.822</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\bishop_black.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\bishop_black.png">
       <PackagePath>Assets\bishop_black.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.022</Modified>
+      <Modified>2016-04-12T14:39:37.834</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\bishop_white.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\bishop_white.png">
       <PackagePath>Assets\bishop_white.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.025</Modified>
+      <Modified>2016-04-12T14:39:37.835</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard.png">
       <PackagePath>Assets\chessboard.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.028</Modified>
+      <Modified>2016-04-12T14:39:37.836</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard10.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard10.png">
       <PackagePath>Assets\chessboard10.png</PackagePath>
-      <Modified>2016-04-04T18:32:55.157</Modified>
+      <Modified>2016-04-12T14:39:37.837</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard11.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard11.png">
       <PackagePath>Assets\chessboard11.png</PackagePath>
-      <Modified>2016-04-04T18:32:55.167</Modified>
+      <Modified>2016-04-12T14:39:37.838</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard3.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard3.png">
       <PackagePath>Assets\chessboard3.png</PackagePath>
-      <Modified>2016-04-01T11:05:13.615</Modified>
+      <Modified>2016-04-12T14:39:37.839</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard4.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard4.png">
       <PackagePath>Assets\chessboard4.png</PackagePath>
-      <Modified>2016-04-04T18:32:55.167</Modified>
+      <Modified>2016-04-12T14:39:37.840</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard5.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard5.png">
       <PackagePath>Assets\chessboard5.png</PackagePath>
-      <Modified>2016-04-04T18:32:55.167</Modified>
+      <Modified>2016-04-12T14:39:37.840</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard6.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard6.png">
       <PackagePath>Assets\chessboard6.png</PackagePath>
-      <Modified>2016-04-04T18:32:55.167</Modified>
+      <Modified>2016-04-12T14:39:37.841</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard7.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard7.png">
       <PackagePath>Assets\chessboard7.png</PackagePath>
-      <Modified>2016-04-04T18:32:55.177</Modified>
+      <Modified>2016-04-12T14:39:37.842</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard8.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard8.png">
       <PackagePath>Assets\chessboard8.png</PackagePath>
-      <Modified>2016-04-04T18:32:55.155</Modified>
+      <Modified>2016-04-12T14:39:37.843</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\chessboard9.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard9.png">
       <PackagePath>Assets\chessboard9.png</PackagePath>
-      <Modified>2016-04-04T18:32:55.157</Modified>
+      <Modified>2016-04-12T14:39:37.844</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\font.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\font.png">
       <PackagePath>Assets\font.png</PackagePath>
-      <Modified>2016-04-03T19:23:08.089</Modified>
+      <Modified>2016-04-12T14:39:37.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\king_black.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\king_black.png">
       <PackagePath>Assets\king_black.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.030</Modified>
+      <Modified>2016-04-12T14:39:37.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\king_white.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\king_white.png">
       <PackagePath>Assets\king_white.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.033</Modified>
+      <Modified>2016-04-12T14:39:37.847</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\knight_black.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\knight_black.png">
       <PackagePath>Assets\knight_black.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.036</Modified>
+      <Modified>2016-04-12T14:39:37.848</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\knight_white.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\knight_white.png">
       <PackagePath>Assets\knight_white.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.039</Modified>
+      <Modified>2016-04-12T14:39:37.848</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-31T19:11:19.612</Modified>
+      <Modified>2016-04-12T14:39:37.815</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\pawn_black.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\pawn_black.png">
       <PackagePath>Assets\pawn_black.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.042</Modified>
+      <Modified>2016-04-12T14:39:37.849</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\pawn_white.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\pawn_white.png">
       <PackagePath>Assets\pawn_white.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.045</Modified>
+      <Modified>2016-04-12T14:39:37.850</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\queen_black.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\queen_black.png">
       <PackagePath>Assets\queen_black.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.010</Modified>
+      <Modified>2016-04-12T14:39:37.851</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\queen_white.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\queen_white.png">
       <PackagePath>Assets\queen_white.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.015</Modified>
+      <Modified>2016-04-12T14:39:37.852</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\rook_black.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\rook_black.png">
       <PackagePath>Assets\rook_black.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.017</Modified>
+      <Modified>2016-04-12T14:39:37.853</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\rook_white.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\rook_white.png">
       <PackagePath>Assets\rook_white.png</PackagePath>
-      <Modified>2016-03-31T17:27:02.020</Modified>
+      <Modified>2016-04-12T14:39:37.854</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-31T19:12:21.957</Modified>
+      <Modified>2016-04-12T14:39:37.815</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-31T19:23:46.414</Modified>
+      <Modified>2016-04-12T14:39:37.816</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\Square310x310Logo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\Square310x310Logo.scale-100.png">
       <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-31T19:11:44.882</Modified>
+      <Modified>2016-04-12T14:39:37.817</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\Square70x70Logo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\Square70x70Logo.scale-100.png">
       <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-31T19:10:49.553</Modified>
+      <Modified>2016-04-12T14:39:37.818</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-31T19:20:09.896</Modified>
+      <Modified>2016-04-12T14:39:37.819</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-31T19:24:29.335</Modified>
+      <Modified>2016-04-12T14:39:37.821</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\Assets\background1.jpg">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\background1.jpg">
       <PackagePath>Assets\background1.jpg</PackagePath>
-      <Modified>2016-04-04T18:46:08.010</Modified>
+      <Modified>2016-04-12T14:39:37.833</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\bin\Debug\Chess.xr.xml">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.xr.xml">
       <PackagePath>Chess.xr.xml</PackagePath>
-      <Modified>2016-04-04T18:57:11.439</Modified>
+      <Modified>2016-04-12T14:39:38.316</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2016-03-31T18:21:03.715</Modified>
+      <Modified>2016-04-12T14:55:00.072</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\bin\Debug\About.xbf">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\About.xbf">
       <PackagePath>About.xbf</PackagePath>
-      <Modified>2016-04-04T16:01:15.079</Modified>
+      <Modified>2016-04-12T14:55:00.076</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\bin\Debug\MainMenu.xbf">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\MainMenu.xbf">
       <PackagePath>MainMenu.xbf</PackagePath>
-      <Modified>2016-04-04T18:57:11.491</Modified>
+      <Modified>2016-04-12T14:55:00.077</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2016-04-05T18:13:18.990</Modified>
+      <Modified>2016-05-11T23:48:29.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess\Chess\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-04T18:52:19.591</Modified>
+      <Modified>2016-04-12T14:55:02.304</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

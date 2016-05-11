@@ -1,1 +1,1 @@
-G:\My projects\Chess C#\Chess\Chess\Chess.csproj;neutral
+G:\My projects\Chess C#\Chess(update)\Chess\Chess\Chess.csproj;neutral
