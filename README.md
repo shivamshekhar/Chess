@@ -28,7 +28,8 @@ Windows 8.1/10
 * Nice UI 
 * Valid Path detection
 * Check detection(incomplete)
-* Multiplayer
+* Multiplayer 
+
 ## To be added soon:
 * Game save and load feature
 * Blitz mode
