@@ -24,8 +24,17 @@ Windows 8.1/10
 * Follow the steps to complete the installation.   
 * Also, please make sure you have switched on your developer mode. 
 
+### Features:
+* Nice UI 
+* Valid Path detection
+* Check detection(incomplete)
+* Multiplayer
+## To be added soon:
+* Game save and load feature
+* Blitz mode
+* checkmate function
 
 ### Developed by: 
-Shivam Shekhar
+Shivam Shekhar  
 Email: shivam.shekhar.ece14@itbhu.ac.in   
  
