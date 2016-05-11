@@ -30,7 +30,7 @@ Windows 8.1/10
 * Check detection(incomplete)
 * Multiplayer 
 
-## To be added soon:
+#### To be added soon:
 * Game save and load feature
 * Blitz mode
 * checkmate function
