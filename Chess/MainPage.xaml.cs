@@ -35,6 +35,7 @@ namespace Chess
         int[] selectpiececoord = new int[2]; //coordinates of selected piece
         string playerturn = "white"; 
         Rectangle[,] chesssquares = new Rectangle[8, 8]; //a 2 dimensional array of all chessboard squares
+        Rectangle temprect = new Rectangle();
         public MainPage()
         {
             this.InitializeComponent();
@@ -177,12 +178,26 @@ namespace Chess
             chessboard.Children.Add(chesssquares[x, y]);
         }
 
+        private void pawnpromotion(int promotepawnto, int pawny)
+        {
+            switch(playerturn)
+            {
+                case "white":
+                    chessboardmap[7, pawny] = promotepawnto;
+                    break;
+                case "black":
+                    chessboardmap[0, pawny] = promotepawnto;
+                    break;
+            }
+        }
+
         private void Rectangle_Tapped(object sender, TappedRoutedEventArgs e) //triggers whenever a chess square is tapped
         {
             Rectangle rect = sender as Rectangle;
             int row = Grid.GetRow(rect);
             int column = Grid.GetColumn(rect);
             coordinatebox.Text = row.ToString() + " , " + column.ToString();
+            showintmap();
             if(ispathhighlighted == false)
             {
                 if (playerturn == "white" && chessboardmap[row, column] > 0)
@@ -215,26 +230,33 @@ namespace Chess
                     {
                         playerturn = "white";
                     }
-                    int kingx = 0, kingy = 0;
-                    for(int i = 0; i<8;i++)
+                    
+                    if(iskingchecked("white") == true)
                     {
-                        for(int j = 0; j< 8; j++)
-                        {
-                            if((playerturn == "white" && chessboardmap[i,j] == 1) || (playerturn == "black" && chessboardmap[i, j] == -1))
-                            {
-                                kingx = i;
-                                kingy = j;
-                            }
-                        }
+                        highlightcheckedking("white", true);
                     }
-                    if(iskingchecked(kingx, kingy) == true)
+                    else if(iskingchecked("white") == false)
                     {
-                        warningmsg.Text = playerturn + " king checked!";
+                        highlightcheckedking("white", false);
+                    }
+
+                    else if (iskingchecked("black") == true)
+                    {
+                        highlightcheckedking("black", true);
+                    }
+                    else if(iskingchecked("black") == false)
+                    {
+                        highlightcheckedking("black", false);
+                    }
+
+                    /*if(iskingchecked(playerturn) == true)
+                    {
+                        highlightcheckedking(playerturn, true);
                     }
                     else
-                    {
-                        warningmsg.Text = "";
-                    }
+                        highlightcheckedking(playerturn, false);
+
+                    */
                     ispathhighlighted = false;
                 }
                 else
@@ -242,6 +264,47 @@ namespace Chess
                     clearpath();
                     ispathhighlighted = false;
                 }
+            }
+        }
+
+        private void highlightcheckedking(string kingstr, bool ishighlight)
+        {
+            if (ishighlight == true)
+            {
+                int kingx = 0, kingy = 0, br = 1;
+                for (int i = 0; i < 8; i++)
+                {
+                    for (int j = 0; j < 8; j++)
+                    {
+                        if ((kingstr == "white" && chessboardmap[i, j] == 1) || (kingstr == "black" && chessboardmap[i, j] == -1))
+                        {
+                            kingx = i;
+                            kingy = j;
+                            br = 0;
+                            break;
+                        }
+                    }
+                    if (br == 0)
+                        break;
+                }
+
+                warningmsg.Text = kingstr + " king checked!";
+                chessboard1.Children.Remove(temprect);
+                //if(Grid.GetRow(temprect) != kingx || Grid.GetColumn(temprect) != kingy)
+                {
+                    temprect.Height = 100;
+                    temprect.Width = 100;
+                    temprect.Fill = new SolidColorBrush(Colors.Yellow);
+                    Grid.SetRow(temprect, kingx);
+                    Grid.SetColumn(temprect, kingy);
+                    chessboard1.Children.Add(temprect);
+                }
+            }
+
+            else
+            {
+                warningmsg.Text = "";
+                chessboard1.Children.Remove(temprect);
             }
         }
 
@@ -267,7 +330,6 @@ namespace Chess
                     hypotheticalchessboardmap[i, j] = chessboardmap[i, j];
                 }
             }
-            //hypotheticalchessboardmap = chessboardmap;
             chessboardmap[destx, desty] = chessboardmap[initx, inity];
             chessboardmap[initx, inity] = 0;
             for(int i = 0; i < 8; i++)
@@ -286,7 +348,7 @@ namespace Chess
                     break;
             }
 
-            if (iskingchecked(kingx, kingy) == true)
+            if (iskingchecked(playerturn) == true)
             {
                 for (int i = 0; i < 8; i++)
                 {
@@ -309,12 +371,9 @@ namespace Chess
                 return false;
             }
         }
-
-        /*private bool issafesquare(int x, int y)
-        {
-               
-            return false;
-        }*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
 
         private void showvalidsquares(int selectx, int selecty) //shows valid moves of a selected chess piece
         {
@@ -327,24 +386,12 @@ namespace Chess
                         {
                             if(i>-1 && i<8 && j<8 && j>-1)
                             {
-                                if(chessboardmap[i,j]<=0)// && iskingchecked(i,j) == false) /*changed*/
+                                if(chessboardmap[i,j]<=0)
                                 {
                                     if (hypotheticalmove(selectx, selecty, i, j) == false)
                                     {
-                                      //  chessboardmap = hypotheticalchessboardmap;
                                         highlighttile(i, j);
                                     }
-                                    /*string str = "";
-                                    for(int I = 0; I<8;I++)
-                                    {
-                                        for(int J = 0; J < 8; J++)
-                                        {
-                                            str = chessboardmap[i, j].ToString() + str;
-                                        }
-
-                                        str = str + "\n";
-                                    }
-                                    t1.Text = str;*/
                                 }
                             }
                         }
@@ -733,14 +780,12 @@ namespace Chess
                         {
                             if (i > -1 && i < 8 && j < 8 && j > -1)
                             {
-                                if (chessboardmap[i, j] >= 0)// && iskingchecked(i, j) == false) /*changed*/
+                                if (chessboardmap[i, j] >= 0)
                                 {
                                     if (hypotheticalmove(selectx, selecty, i, j) == false)
                                     {
-                                        //  chessboardmap = hypotheticalchessboardmap;
                                         highlighttile(i, j);
                                     }
-                                    //highlighttile(i, j);
                                 }
                             }
                         }
@@ -1123,6 +1168,10 @@ namespace Chess
             highlighttile(selectx, selecty);
         }
 
+ /*----------------------------------------------------------------------------------------------------------------------*/
+ /*----------------------------------------------------------------------------------------------------------------------*/
+ /*----------------------------------------------------------------------------------------------------------------------*/
+
         private void highlighttile(int x, int y) //highlights a tile by drawing a boundary around it
         {
             if (chesssquares[x, y].StrokeThickness == 0)
@@ -1131,16 +1180,16 @@ namespace Chess
                 chesssquares[x, y].StrokeThickness = 0;
         }
 
-        private void movepiece(int piece, int initx, int inity, int targetx, int targety) //moves a chesspiece
+        private void movepiece(int piece, int initx, int inity, int destx, int desty) //moves a chesspiece
         {
-            if((initx != targetx || inity !=targety) && piece!=0)
+            if((initx != destx || inity !=desty) && piece!=0)
             {
                 int temp;
-                temp = chessboardmap[targetx, targety];
-                chessboardmap[targetx, targety] = chessboardmap[initx, inity];
+                temp = chessboardmap[destx, desty];
+                chessboardmap[destx, desty] = chessboardmap[initx, inity];
                 chessboardmap[initx, inity] = 0;
                 loadpiece(chessboardmap[initx, inity], initx, inity);
-                loadpiece(chessboardmap[targetx, targety], targetx, targety);
+                loadpiece(chessboardmap[destx, desty], destx, desty);
                 if (temp == 1 || temp == -1)
                     gameover(playerturn);
             }
@@ -1200,15 +1249,32 @@ namespace Chess
             stb.Begin();
         }
 
-        private bool iskingchecked(int kingx, int kingy)
+        private bool iskingchecked(string kingstr) /*checks whether the king is in check or not*/
         {
             int king;
-            if (playerturn == "white")
+            if (kingstr == "white")
                 king = 1;
             else
                 king = -1;
-            
-            if(king > 0)
+
+            int kingx = 0, kingy = 0,br = 1;
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if ((kingstr == "white" && chessboardmap[i, j] == 1) || (kingstr == "black" && chessboardmap[i, j] == -1))
+                    {
+                        kingx = i;
+                        kingy = j;
+                        br = 0;
+                        break;
+                    }
+                }
+                if (br == 0)
+                    break;
+            }
+
+            if (king > 0)
             {
                 
                 for(int i = kingx + 1; i < 8; i++) //vertical down
@@ -1237,7 +1303,7 @@ namespace Chess
                         return true;
                     else if (chessboardmap[kingx, i] == -1 && i == kingy + 1)
                         return true;
-                    else if (chessboardmap[i, kingy] != /*>*/ 0)
+                    else if (chessboardmap[kingx, i] != /*>*/ 0)
                         break;
                 }
 
@@ -1247,7 +1313,7 @@ namespace Chess
                         return true;
                     else if (chessboardmap[kingx, i] == -1 && i == kingy - 1)
                         return true;
-                    else if (chessboardmap[i, kingy] != /*>*/ 0)
+                    else if (chessboardmap[kingx, i] != /*>*/ 0)
                         break;
                 }
 
@@ -1345,7 +1411,7 @@ namespace Chess
                         return true;
                     else if (chessboardmap[kingx, i] == 1 && i == kingy + 1)
                         return true;
-                    else if (chessboardmap[i, kingy] != /*<*/ 0)
+                    else if (chessboardmap[kingx, i] != /*<*/ 0)
                         break;
                 }
 
@@ -1355,7 +1421,7 @@ namespace Chess
                         return true;
                     else if (chessboardmap[kingx, i] == 1 && i == kingy - 1)
                         return true;
-                    else if (chessboardmap[i, kingy] != /*<*/ 0)
+                    else if (chessboardmap[kingx, i] != /*<*/ 0)
                         break;
                 }
 
@@ -1421,15 +1487,33 @@ namespace Chess
             return false;
         }
 
-        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Button_Tapped(object sender, TappedRoutedEventArgs e) 
         {
             Frame.Navigate(typeof(MainPage));
         }
 
-        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+        private void BackButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainMenu));
         }
 
+        private void Exitbutton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainMenu));
+            BackButton.Flyout.Hide();
+        }
+
+        private void showintmap()
+        {
+            chessboardintmap.Text = "";
+            for (int i = 0; i< 8;i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    chessboardintmap.Text = chessboardintmap.Text + " " + chessboardmap[i, j].ToString() ;
+                }
+                chessboardintmap.Text = chessboardintmap.Text + "\n";
+            }
+        }
     }
 }

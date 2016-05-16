@@ -148,6 +148,7 @@
     <Content Include="Assets\knight_black.png" />
     <Content Include="Assets\knight_white.png" />
     <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\parchment.jpg" />
     <Content Include="Assets\pawn_black.png" />
     <Content Include="Assets\pawn_white.png" />
     <Content Include="Assets\queen_black.png" />

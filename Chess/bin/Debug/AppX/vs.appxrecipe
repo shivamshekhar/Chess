@@ -22,13 +22,13 @@
     <AppXManifest Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-12T14:55:04.220</Modified>
+      <Modified>2016-05-16T19:39:44.036</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.exe">
       <PackagePath>Chess.exe</PackagePath>
-      <Modified>2016-05-11T23:48:29.586</Modified>
+      <Modified>2016-05-16T21:25:49.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\backbutton.png">
       <PackagePath>Assets\backbutton.png</PackagePath>
@@ -165,13 +165,17 @@
       <PackagePath>Assets\background1.jpg</PackagePath>
       <Modified>2016-04-12T14:39:37.833</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\parchment.jpg">
+      <PackagePath>Assets\parchment.jpg</PackagePath>
+      <Modified>2016-05-16T19:21:17.033</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.xr.xml">
       <PackagePath>Chess.xr.xml</PackagePath>
-      <Modified>2016-04-12T14:39:38.316</Modified>
+      <Modified>2016-05-16T19:39:42.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2016-04-12T14:55:00.072</Modified>
+      <Modified>2016-05-16T21:25:14.848</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\About.xbf">
       <PackagePath>About.xbf</PackagePath>
@@ -183,11 +187,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2016-05-11T23:48:29.423</Modified>
+      <Modified>2016-05-16T21:25:49.573</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-12T14:55:02.304</Modified>
+      <Modified>2016-05-16T19:39:43.209</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

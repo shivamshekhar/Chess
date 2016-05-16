@@ -124,6 +124,9 @@
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\background1.jpg">
       <PackagePath>Assets\background1.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\parchment.jpg">
+      <PackagePath>Assets\parchment.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.xr.xml">
       <PackagePath>Chess.xr.xml</PackagePath>
     </AppxPackagedFile>

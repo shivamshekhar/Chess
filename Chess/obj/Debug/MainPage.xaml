@@ -11,12 +11,15 @@
         <Grid.Background>
             <ImageBrush ImageSource="Assets/background1.jpg" Stretch="Fill"/>
         </Grid.Background>
+
         <Grid
-            x:Name="chessboard"
+            x:Name="chessboard1"
             Height="800"
             Width="800"
             HorizontalAlignment="Center"
-            VerticalAlignment="Center">
+            VerticalAlignment="Center" Canvas.ZIndex="-1"
+            Margin="0,30,0,0"
+            >
             <Grid.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/chessboard4.png"/>
             </Grid.Background>
@@ -44,10 +47,127 @@
 
 
         </Grid>
+
+
+        <Grid
+            x:Name="chessboard"
+            Height="800"
+            Width="800"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" 
+            Margin="0,30,0,0"
+            >
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+
+        </Grid>
         <TextBlock x:Name="coordinatebox" HorizontalAlignment="Left" Height="Auto" Margin="30,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="Auto" FontSize="26.667"/>
-        <Image x:ConnectionId='1' HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,40,0,0" Source="Assets/backbutton.png" Height="30" Width="30"                      />
+        <Button x:Name="BackButton" Style="{StaticResource ImageButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,40,0,0" Height="40" Width="40" BorderBrush="{x:Null}">
+            <Image Source="Assets/backbutton.png" />
+            <Button.Flyout>
+                <Flyout>
+                    <Grid>
+                        <Button x:ConnectionId='1' x:Name="Exitbutton" Content="Exit Anyway" Margin="0,50,0,0" Width="130" HorizontalAlignment="Center"                         />
+                        <TextBlock Text="Are you sure you want to exit?&#x0a;You will lose the entire progress!" FontSize="16" Margin="0,0,0,36"/>
+                    </Grid>
+                </Flyout>
+            </Button.Flyout>
+
+        </Button>
         <TextBlock x:Name="t1" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <TextBlock x:Name="warningmsg" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="40" Margin="30,-300,0,0"/>
+        
+        <Grid Height="800" Width="40" Margin="0,30,840,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8D4F11" Offset="0"/>
+                    <GradientStop Color="#FFB96F26" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="8" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+            <TextBlock Grid.Row="1" Text="7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+            <TextBlock Grid.Row="2" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+            <TextBlock Grid.Row="3" Text="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+            <TextBlock Grid.Row="4" Text="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+            <TextBlock Grid.Row="5" Text="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+            <TextBlock Grid.Row="6" Text="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+            <TextBlock Grid.Row="7" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+        </Grid>
+
+        <Grid Height="40" Width="800" Margin="0,-810,0,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8D4F11" Offset="0"/>
+                    <GradientStop Color="#FFB96F26" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+
+
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Text="a" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45"/>
+            <TextBlock Grid.Column="1" Text="b" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45"/>
+            <TextBlock Grid.Column="2" Text="c" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45"/>
+            <TextBlock Grid.Column="3" Text="d" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45"/>
+            <TextBlock Grid.Column="4" Text="e" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45"/>
+            <TextBlock Grid.Column="5" Text="f" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45"/>
+            <TextBlock Grid.Column="6" Text="g" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45"/>
+            <TextBlock Grid.Column="7" Text="h" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45"/>
+        </Grid>
+
+
+
+        <Grid x:Name="HUDcontrol" HorizontalAlignment="Right" VerticalAlignment="Center" Height="600" Width="350" Margin="0,0,20,0">
+            <Grid.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/parchment.jpg"/>
+            </Grid.Background>
+            <TextBlock x:Name="warningmsg" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="35" Margin="30,-300,0,0" Foreground="Black"/>
+
+
+        </Grid>
+
+        <TextBlock x:Name="chessboardintmap" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="35" Height="400" Width="350"/>
+
     </Grid>
 </Page>
 
