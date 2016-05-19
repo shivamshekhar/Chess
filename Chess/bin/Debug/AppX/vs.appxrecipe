@@ -28,7 +28,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.exe">
       <PackagePath>Chess.exe</PackagePath>
-      <Modified>2016-05-16T21:25:49.865</Modified>
+      <Modified>2016-05-19T21:14:08.347</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\backbutton.png">
       <PackagePath>Assets\backbutton.png</PackagePath>
@@ -171,7 +171,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.xr.xml">
       <PackagePath>Chess.xr.xml</PackagePath>
-      <Modified>2016-05-16T19:39:42.448</Modified>
+      <Modified>2016-05-19T16:05:46.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -187,7 +187,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2016-05-16T21:25:49.573</Modified>
+      <Modified>2016-05-19T16:41:24.526</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
