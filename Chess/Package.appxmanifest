@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="ead7647f-4bdf-4e4d-9aea-2f3ebc57f88c" Publisher="CN=Inspiron" Version="1.0.0.0" />
+  <Identity Name="ead7647f-4bdf-4e4d-9aea-2f3ebc57f88c" Publisher="CN=Inspiron" Version="1.0.0.5" />
   <Properties>
     <DisplayName>Chess</DisplayName>
     <PublisherDisplayName>Inspiron</PublisherDisplayName>

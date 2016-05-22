@@ -7,7 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="White">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/chessboard4.png"/>
+        </Grid.Background>
         <Image Height="400" Width="400" HorizontalAlignment="Left" VerticalAlignment="Top" Source="Assets/king_black.png"/>
         <Image Height="400" Width="400" HorizontalAlignment="Right" VerticalAlignment="Top" Source="Assets/queen_white.png"/>
         <Image Height="400" Width="400" HorizontalAlignment="Left" VerticalAlignment="Bottom" Source="Assets/knight_white.png"/>

@@ -9,140 +9,140 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>ead7647f-4bdf-4e4d-9aea-2f3ebc57f88c</PackageIdentityName>
-    <IntermediateOutputPath>G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.exe">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.exe">
       <PackagePath>Chess.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\backbutton.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\backbutton.png">
       <PackagePath>Assets\backbutton.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\bishop_black.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\bishop_black.png">
       <PackagePath>Assets\bishop_black.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\bishop_white.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\bishop_white.png">
       <PackagePath>Assets\bishop_white.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard.png">
       <PackagePath>Assets\chessboard.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard10.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard10.png">
       <PackagePath>Assets\chessboard10.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard11.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard11.png">
       <PackagePath>Assets\chessboard11.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard3.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard3.png">
       <PackagePath>Assets\chessboard3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard4.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard4.png">
       <PackagePath>Assets\chessboard4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard5.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard5.png">
       <PackagePath>Assets\chessboard5.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard6.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard6.png">
       <PackagePath>Assets\chessboard6.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard7.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard7.png">
       <PackagePath>Assets\chessboard7.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard8.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard8.png">
       <PackagePath>Assets\chessboard8.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard9.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\chessboard9.png">
       <PackagePath>Assets\chessboard9.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\font.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\font.png">
       <PackagePath>Assets\font.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\king_black.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\king_black.png">
       <PackagePath>Assets\king_black.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\king_white.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\king_white.png">
       <PackagePath>Assets\king_white.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\knight_black.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\knight_black.png">
       <PackagePath>Assets\knight_black.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\knight_white.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\knight_white.png">
       <PackagePath>Assets\knight_white.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\pawn_black.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\pawn_black.png">
       <PackagePath>Assets\pawn_black.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\pawn_white.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\pawn_white.png">
       <PackagePath>Assets\pawn_white.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\queen_black.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\queen_black.png">
       <PackagePath>Assets\queen_black.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\queen_white.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\queen_white.png">
       <PackagePath>Assets\queen_white.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\rook_black.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\rook_black.png">
       <PackagePath>Assets\rook_black.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\rook_white.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\rook_white.png">
       <PackagePath>Assets\rook_white.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\Square310x310Logo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\Square310x310Logo.scale-100.png">
       <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\Square70x70Logo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\Square70x70Logo.scale-100.png">
       <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\background1.jpg">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\background1.jpg">
       <PackagePath>Assets\background1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\Assets\parchment.jpg">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\Assets\parchment.jpg">
       <PackagePath>Assets\parchment.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.xr.xml">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\Chess.xr.xml">
       <PackagePath>Chess.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\About.xbf">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\About.xbf">
       <PackagePath>About.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\MainMenu.xbf">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\MainMenu.xbf">
       <PackagePath>MainMenu.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\My projects\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="G:\My projects\C#\Chess C#\Chess%28update%29\Chess\Chess\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

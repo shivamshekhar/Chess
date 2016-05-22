@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="ead7647f-4bdf-4e4d-9aea-2f3ebc57f88c" Publisher="CN=Inspiron" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Identity Name="ead7647f-4bdf-4e4d-9aea-2f3ebc57f88c" Publisher="CN=Inspiron" Version="1.0.0.5" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>Chess</DisplayName>
     <PublisherDisplayName>Inspiron</PublisherDisplayName>

@@ -232,7 +232,7 @@ namespace Chess
             int row = Grid.GetRow(rect);
             int column = Grid.GetColumn(rect);
             coordinatebox.Text = row.ToString() + " , " + column.ToString();
-            showintmap();
+            //showintmap(); //used for debugging purposes
             if(ispathhighlighted == false && initializedpawnpromotionevent == false)
             {
                 if (playerturn == "white" && chessboardmap[row, column] > 0)
@@ -578,6 +578,11 @@ namespace Chess
             Frame.Navigate(typeof(MainPage));
         }
 
+        private void Image_Tapped(object sender, TappedRoutedEventArgs e) 
+        {
+            //Frame.Navigate(typeof(MainPage));
+        }
+
         private void Exitbutton_Click(object sender, RoutedEventArgs e) //Triggers when, Exit button is clicked
         {
             Frame.Navigate(typeof(MainMenu));
@@ -725,6 +730,48 @@ namespace Chess
                         break;
                 }
 
+                //check from knight
+                if (kingx - 2 > -1 && kingy - 1 > -1)
+                {
+                    if (chessboardmap[kingx - 2, kingy - 1] == -3)
+                        return true;
+                }
+                if (kingx - 2 > -1 && kingy + 1 < 8)
+                {
+                    if (chessboardmap[kingx - 2, kingy + 1] == -3)
+                        return true;
+                }
+                if (kingx + 2 < 8 && kingy - 1 > -1)
+                {
+                    if (chessboardmap[kingx + 2, kingy - 1] == -3)
+                        return true;
+                }
+                if (kingx + 2 < 8 && kingy + 1 < 8)
+                {
+                    if (chessboardmap[kingx + 2, kingy + 1] == -3)
+                        return true;
+                }
+                if (kingx - 1 > -1 && kingy - 2 > -1)
+                {
+                    if (chessboardmap[kingx - 1, kingy - 2] == -3)
+                        return true;
+                }
+                if (kingx - 1 > -1 && kingy + 2 < 8)
+                {
+                    if (chessboardmap[kingx - 1, kingy + 2] == -3)
+                        return true;
+                }
+                if (kingx + 1 < 8 && kingy - 2 > -1)
+                {
+                    if (chessboardmap[kingx + 1, kingy - 2] == -3)
+                        return true;
+                }
+                if (kingx + 1 < 8 && kingy + 2 < 8)
+                {
+                    if (chessboardmap[kingx + 1, kingy + 2] == -3)
+                        return true;
+                }
+
             }
 
             else if (king < 0)
@@ -835,6 +882,49 @@ namespace Chess
                         break;
                 }
 
+                //check from knight
+                if(kingx - 2 > -1 && kingy - 1 > -1)
+                {
+                    if(chessboardmap[kingx - 2, kingy - 1] == 3)
+                        return true;
+                }
+
+                if (kingx - 2 > -1 && kingy + 1 < 8)
+                {
+                    if (chessboardmap[kingx - 2, kingy + 1] == 3)
+                        return true;
+                }
+
+                if (kingx + 2 < 8 && kingy - 1 > -1)
+                {
+                    if (chessboardmap[kingx + 2, kingy - 1] == 3)
+                        return true;
+                }
+                if (kingx + 2 < 8 && kingy + 1 < 8)
+                {
+                    if (chessboardmap[kingx + 2, kingy + 1] == 3)
+                        return true;
+                }
+                if (kingx - 1 > -1 && kingy - 2 > -1)
+                {
+                    if (chessboardmap[kingx - 1, kingy - 2] == 3)
+                        return true;
+                }
+                if (kingx - 1 > -1 && kingy + 2 < 8)
+                {
+                    if (chessboardmap[kingx - 1, kingy + 2] == 3)
+                        return true;
+                }
+                if (kingx + 1 < 8 && kingy - 2 > -1)
+                {
+                    if (chessboardmap[kingx + 1, kingy - 2] == 3)
+                        return true;
+                }
+                if (kingx + 1 < 8 && kingy + 2 < 8)
+                {
+                    if (chessboardmap[kingx + 1, kingy + 2] == 3)
+                        return true;
+                }
             }
             return false;
         }
